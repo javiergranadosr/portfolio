@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta name="description" content="Portafolio de trabajos y sitio web personal de Javier Granados Rojas" />
+  <meta name="keywords"
+    content="Portafolio Javier Granados Rojas, Trabajos Javier Granados Rojas, Desarrollador web Javier Granados Rojas, Desarrollador Javier, Programador Javier Granados Rojas, Programador Javier" />
+  <meta name="author" content="Javier Granados Rojas" />
+  <meta name="copyright" content="Javier Granados Rojas" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <title>Javier Granados Rojas – Desarrollador Web</title>
+  <!-- ESTILOS CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap" rel="stylesheet" />
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/c394e4529c.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header" id="hello">
+    <div class="content-nav container">
+      <div class="logo">
+        <h1>Javier <span class="badge"> Granados</span></h1>
+      </div>
+      <div class="menu-nav logo" id="show-menu">
+        <nav>
+          <ul>
+            <li><a data-scroll href="#hello">Hola</a></li>
+            <li><a data-scroll href="#about-me"> Sobre mi </a></li>
+            <li><a data-scroll href="#portfolio"> Portafolio </a></li>
+            <li><a data-scroll href="#contact">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- MENU RESPONSIVE -->
+    <div id="icon-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <!-- BANNER  -->
+  <div class="content-banner">
+    <div class="title-banner" data-aos="zoom-out-down">
+      <h1>
+        ¡Hola! Soy un <br />Desarrollador <span class="badge">Web</span>
+      </h1>
+      <a data-scroll href="#portfolio" class="animated zoomIn">Portafolio</a>
+    </div>
+  </div>
+
+  <main class="main">
+    <!-- SECTION ABOUT ME -->
+    <section class="container" id="about-me">
+      <div class="about-me">
+        <h1 class="main-title">Sobre <span class="badge"> mi </span></h1>
+        <div class="about-me-img" data-aos="zoom-out-down">
+          <img loading="lazy" src="img/about_me.jpg" alt="" />
+        </div>
+        <div class="about-me-description" data-aos="zoom-out-down">
+          <p>
+            Soy Javier Granados Rojas, tengo una gran pasión por el diseño y
+            desarrollo web orientado a resultados, autónomo, autodidacta,
+            trabajador, responsable, proactivo, constantemente mejoro mis
+            habilidades y estoy totalmente al tanto de las últimas tecnologías
+            para mi perfil profesional.
+          </p>
+          <p>Skills:</p>
+          <div class="about-me-skills">
+            <div class="img-skill">
+              <img loading="lazy" src="img/skills/php.png" alt="PHP" />
+            </div>
+            <div class="img-skill">
+              <img loading="lazy" src="img/skills/mysql.png" alt="MYSQL" />
+            </div>
+            <div class="img-skill">
+              <img loading="lazy" src="img/skills/wordpress.png" alt="WORDPRESS" />
+            </div>
+            <div class="img-skill">
+              <img loading="lazy" src="img/skills/js.png" alt="JAVASCRITP" />
+            </div>
+            <div class="img-skill animated zoomIn">
+              <img loading="lazy" src="img/skills/html5.png" alt="HTML5" />
+            </div>
+            <div class="img-skill">
+              <img loading="lazy" src="img/skills/css3.png" alt="CSS3" />
+            </div>
+            <div class="img-skill">
+              <img loading="lazy" src="img/skills/bootstrap.png" alt="BOOTSTRAP 4" />
+            </div>
+            <div class="img-skill">
+              <img loading="lazy" src="img/skills/materialize.png" alt="MATERIALIZE " />
+            </div>
+            <div class="img-skill">
+              <img loading="lazy" src="img/skills/vuejs.jpg" alt="VUEJS" />
+            </div>
+            <div class="img-skill">
+              <img loading="lazy" src="img/skills/laravel.jpg" alt="LARAVEL" />
+            </div>
+            <div class="img-skill">
+              <img loading="lazy" src="img/skills/jquery.png" alt="JQUERY" />
+            </div>
+            <div class="img-skill">
+              <img loading="lazy" src="img/skills/sass.png" alt="SASS" />
+            </div>
+            <div class="img-skill">
+              <img loading="lazy" src="img/skills/git.png" alt="GIT" />
+            </div>
+            <div class="img-skill">
+              <img loading="lazy" src="img/skills/markdown.jpg" alt="MARKDOWN" />
+            </div>
+            <div class="img-skill">
+              <img loading="lazy" src="img/skills/adobexd.jpg" alt="ADOBE XD" />
+            </div>
+          </div>
+          <!-- <a href=""><i class="fab fa-linkedin-in"></i></a>
+          <a href=""><i class="fab fa-github"></i></a>
+          <a href=""><i class="fab fa-codepen"></i></a> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION PORTFOLIO -->
+    <section class="container" id="portfolio">
+      <div class="portfolio">
+        <h1 class="main-title">Mi <span class="badge"> portafolio </span></h1>
+        <p class="title-description">
+          De clic en la imagen para ver la descripción del proyecto
+        </p>
+
+        <div class="portfolio-gallery" id="portfolio-gallery">
+          <div class="imagen-port" data-aos="zoom-out-down">
+            <img loading="lazy" src="img/portfolio/portfolio.png" alt="PORTAFOLIO"
+              onclick="openModal('modalPortfolio')" />
+            <div class="hover-galeria" onclick="openModal('modalPortfolio')">
+              <img onclick="openModal('modalPortfolio')" loading="lazy" src="img/icon_view.png" alt="VIEW" />
+            </div>
+          </div>
+          <!-- MODAL -->
+          <div id="modalPortfolio" class="modal">
+            <div class="modal-flex" id="modal-flex">
+              <div class="content-modal">
+                <div class="modal-header modal-flex">
+                  <h2>Landing page</h2>
+                  <span class="close" onclick="closeModal('modalPortfolio')">&times;</span>
+                </div>
+                <div class="modal-body">
+                  <div class="img-project">
+                    <img loading="lazy" src="img/portfolio/portfolio.png" alt="" />
+                  </div>
+                  <div class="description">
+                    <p>
+                      Portafolio Javier Granados Rojas
+                    </p>
+                    <br />
+                    <p>Tecnologías utilizadas en el desarrollo:</p>
+                    <ul>
+                      <li><i class="fas fa-check-circle"></i> HTML5</li>
+                      <li><i class="fas fa-check-circle"></i> JS</li>
+                      <li><i class="fas fa-check-circle"></i> CSS3</li>
+                      <li><i class="fas fa-check-circle"></i> JQUERY</li>
+                      <li><i class="fas fa-check-circle"></i> FONTAWESOME</li>
+                      <li><i class="fas fa-check-circle"></i> AOS</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer">
+                  <button onclick="closeModal('modalPortfolio')">
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="imagen-port" data-aos="zoom-out-down">
+            <img loading="lazy" src="img/portfolio/secc.png" alt="SEEC" onclick="openModal('modalSeec')" />
+            <div class="hover-galeria" onclick="openModal('modalSeec')">
+              <img loading="lazy" src="img/icon_view.png" alt="VIEW" onclick="openModal('modalSeec')" />
+            </div>
+          </div>
+          <!-- MODAL -->
+          <div id="modalSeec" class="modal">
+            <div class="modal-flex" id="modal-flex">
+              <div class="content-modal">
+                <div class="modal-header modal-flex">
+                  <h2>SECC</h2>
+                  <span class="close" onclick="closeModal('modalSeec')">&times;</span>
+                </div>
+                <div class="modal-body">
+                  <div class="img-project">
+                    <img loading="lazy" src="img/portfolio/secc.png" alt="" srcset="" />
+                  </div>
+                  <div class="description">
+                    <p>
+                      Caso éxito. Sistema de Evaluación del Estado de Campeche,
+                      implementado a nivel estatal en el estado de
+                      campeche, para ser aplicados autoevaluaciones y
+                      evaluaciones finales en línea a nivel primaria y
+                      secundaria.
+                    </p>
+                    <br />
+                    <p>Tecnologías utilizadas en el desarrollo:</p>
+                    <ul>
+                      <li><i class="fas fa-check-circle"></i> PHP</li>
+                      <li><i class="fas fa-check-circle"></i> MYSQL</li>
+                      <li><i class="fas fa-check-circle"></i> HTML5</li>
+                      <li><i class="fas fa-check-circle"></i> JS</li>
+                      <li><i class="fas fa-check-circle"></i> CSS3</li>
+                      <li><i class="fas fa-check-circle"></i> JQUERY</li>
+                      <li><i class="fas fa-check-circle"></i> AJAX</li>
+                      <li><i class="fas fa-check-circle"></i> JSON</li>
+                      <li><i class="fas fa-check-circle"></i> BOOTSTRAP 4</li>
+                      <li><i class="fas fa-check-circle"></i> MORRIS.JS</li>
+                      <li><i class="fas fa-check-circle"></i> ALERTIFYJS</li>
+                      <li><i class="fas fa-check-circle"></i> TABLEEXPORT</li>
+                      <li><i class="fas fa-check-circle"></i> DATATABLES</li>
+                      <li><i class="fas fa-check-circle"></i> FONTAWESOME</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer">
+                  <button onclick="closeModal('modalSeec')">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="imagen-port" data-aos="zoom-out-down">
+            <img loading="lazy" src="img/portfolio/budget_control.jpg" alt="BUDGET CONTROL"
+              onclick="openModal('modalBudget')" />
+            <div class="hover-galeria" onclick="openModal('modalBudget')">
+              <img loading="lazy" src="img/icon_view.png" alt="VIEW" onclick="openModal('modalBudget')" />
+            </div>
+          </div>
+          <!-- MODAL -->
+          <div id="modalBudget" class="modal">
+            <div class="modal-flex" id="modal-flex">
+              <div class="content-modal">
+                <div class="modal-header modal-flex">
+                  <h2>Budget Control</h2>
+                  <span class="close" onclick="closeModal('modalBudget')">&times;</span>
+                </div>
+                <div class="modal-body">
+                  <div class="img-project">
+                    <img loading="lazy" src="img/portfolio/budget_control.jpg" alt="" srcset="" />
+                  </div>
+                  <div class="description">
+                    <p>
+                      Sistema para el registro de obras públicas y consulta de
+                      reportes generales, por contratista y por supervisor.
+                    </p>
+                    <br />
+                    <p>Tecnologías utilizadas en el desarrollo:</p>
+                    <ul>
+                      <li><i class="fas fa-check-circle"></i> PHP</li>
+                      <li><i class="fas fa-check-circle"></i> MYSQL</li>
+                      <li><i class="fas fa-check-circle"></i> HTML5</li>
+                      <li><i class="fas fa-check-circle"></i> JS</li>
+                      <li><i class="fas fa-check-circle"></i> CSS3</li>
+                      <li><i class="fas fa-check-circle"></i> JQUERY</li>
+                      <li><i class="fas fa-check-circle"></i> AJAX</li>
+                      <li><i class="fas fa-check-circle"></i> JSON</li>
+                      <li><i class="fas fa-check-circle"></i> BOOTSTRAP 4</li>
+                      <li><i class="fas fa-check-circle"></i> DATATABLES</li>
+                      <li><i class="fas fa-check-circle"></i> FONTAWESOME</li>
+                      <li>
+                        <i class="fas fa-check-circle"></i> SWEETALERT 2
+                      </li>
+                      <li><i class="fas fa-check-circle"></i> TABLEEXPORT</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer">
+                  <button onclick="closeModal('modalBudget')">
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="imagen-port" data-aos="zoom-out-down">
+            <img loading="lazy" src="img/portfolio/system_lab.jpg" alt="SYSTEM LAB"
+              onclick="openModal('modalSystemLab')" />
+            <div class="hover-galeria" onclick="openModal('modalSystemLab')">
+              <img loading="lazy" src="img/icon_view.png" alt="VIEW" onclick="openModal('modalSystemLab')" />
+            </div>
+          </div>
+          <!-- MODAL -->
+          <div id="modalSystemLab" class="modal">
+            <div class="modal-flex" id="modal-flex">
+              <div class="content-modal">
+                <div class="modal-header modal-flex">
+                  <h2>System Lab</h2>
+                  <span class="close" onclick="closeModal('modalSystemLab')">&times;</span>
+                </div>
+                <div class="modal-body">
+                  <div class="img-project">
+                    <img loading="lazy" src="img/portfolio/system_lab.jpg" alt="" srcset="" />
+                  </div>
+                  <div class="description">
+                    <p>
+                      Sistema implementado en un laboratorio de prácticas
+                      profesionales, para el registro al ingresar al
+                      laboratorio y practica a realizar, registro de uso de
+                      equipos, mantenimiento de equipos del laboratorio y
+                      reportes por rango de fecha, diarios, semanal y mensual.
+                    </p>
+                    <br />
+                    <p>Tecnologías utilizadas en el desarrollo:</p>
+                    <ul>
+                      <li><i class="fas fa-check-circle"></i> PHP</li>
+                      <li><i class="fas fa-check-circle"></i> MYSQL</li>
+                      <li><i class="fas fa-check-circle"></i> HTML5</li>
+                      <li><i class="fas fa-check-circle"></i> JS</li>
+                      <li><i class="fas fa-check-circle"></i> CSS3</li>
+                      <li><i class="fas fa-check-circle"></i> JQUERY</li>
+                      <li><i class="fas fa-check-circle"></i> AJAX</li>
+                      <li><i class="fas fa-check-circle"></i> JSON</li>
+                      <li><i class="fas fa-check-circle"></i> BOOTSTRAP 4</li>
+                      <li><i class="fas fa-check-circle"></i> DATATABLES</li>
+                      <li><i class="fas fa-check-circle"></i> FONTAWESOME</li>
+                      <li>
+                        <i class="fas fa-check-circle"></i> SWEETALERT 2
+                      </li>
+                      <li><i class="fas fa-check-circle"></i> TABLEEXPORT</li>
+                      <li>
+                        <i class="fas fa-check-circle"></i> DATERANGEPICKER
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer">
+                  <button onclick="closeModal('modalSystemLab')">
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="imagen-port" data-aos="zoom-out-down">
+            <img loading="lazy" src="img/portfolio/sistema_arangar.png" alt="PREDIAGNOSTICO ARANGAR"
+              onclick="openModal('modalArangar')" />
+            <div class="hover-galeria" onclick="openModal('modalArangar')">
+              <img loading="lazy" src="img/icon_view.png" alt="VIEW" onclick="openModal('modalArangar')" />
+            </div>
+          </div>
+          <!-- MODAL -->
+          <div id="modalArangar" class="modal">
+            <div class="modal-flex" id="modal-flex">
+              <div class="content-modal">
+                <div class="modal-header modal-flex">
+                  <h2>Prediagnóstico Arangar</h2>
+                  <span class="close" onclick="closeModal('modalArangar')">&times;</span>
+                </div>
+                <div class="modal-body">
+                  <div class="img-project">
+                    <img loading="lazy" src="img/portfolio/sistema_arangar.png" alt="" />
+                  </div>
+                  <div class="description">
+                    <p>
+                      Sistema implementado en la empresa Arangar, para el
+                      prediagnóstico de equipos de cómputo, control de
+                      trabajadores con sus respectivos roles de usuario y
+                      registro de servicios.
+                    </p>
+                    <br />
+                    <p>Tecnologías utilizadas en el desarrollo:</p>
+                    <ul>
+                      <li><i class="fas fa-check-circle"></i> PHP</li>
+                      <li><i class="fas fa-check-circle"></i> MYSQL</li>
+                      <li><i class="fas fa-check-circle"></i> HTML5</li>
+                      <li><i class="fas fa-check-circle"></i> JS</li>
+                      <li><i class="fas fa-check-circle"></i> CSS3</li>
+                      <li><i class="fas fa-check-circle"></i> JQUERY</li>
+                      <li><i class="fas fa-check-circle"></i> AJAX</li>
+                      <li><i class="fas fa-check-circle"></i> JSON</li>
+                      <li><i class="fas fa-check-circle"></i> BOOTSTRAP 4</li>
+                      <li><i class="fas fa-check-circle"></i> FONTAWESOME</li>
+                      <li>
+                        <i class="fas fa-check-circle"></i> SWEETALERT 2
+                      </li>
+                      <li><i class="fas fa-check-circle"></i> OVERHANG JS</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer">
+                  <button onclick="closeModal('modalArangar')">
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="imagen-port" data-aos="zoom-out-down">
+            <img loading="lazy" src="img/portfolio/sazon_campeche.png" alt="SAZON CAMPECHE"
+              onclick="openModal('modalSazon')" />
+            <div class="hover-galeria" onclick="openModal('modalSazon')">
+              <img loading="lazy" src="img/icon_view.png" alt="VIEW" onclick="openModal('modalSazon')" />
+            </div>
+          </div>
+          <!-- MODAL -->
+          <div id="modalSazon" class="modal">
+            <div class="modal-flex" id="modal-flex">
+              <div class="content-modal">
+                <div class="modal-header modal-flex">
+                  <h2>Prediagnóstico Arangar</h2>
+                  <span class="close" onclick="closeModal('modalSazon')">&times;</span>
+                </div>
+                <div class="modal-body">
+                  <div class="img-project">
+                    <img loading="lazy" src="img/portfolio/sazon_campeche.png" alt="" />
+                  </div>
+                  <div class="description">
+                    <p>
+                      Sistema para el registro, administración de recetas y
+                      ferias tradicionales.
+                    </p>
+                    <br />
+                    <p>Tecnologías utilizadas en el desarrollo:</p>
+                    <ul>
+                      <li><i class="fas fa-check-circle"></i> PHP</li>
+                      <li><i class="fas fa-check-circle"></i> MYSQL</li>
+                      <li><i class="fas fa-check-circle"></i> HTML5</li>
+                      <li><i class="fas fa-check-circle"></i> JS</li>
+                      <li><i class="fas fa-check-circle"></i> CSS3</li>
+                      <li><i class="fas fa-check-circle"></i> JQUERY</li>
+                      <li><i class="fas fa-check-circle"></i> AJAX</li>
+                      <li><i class="fas fa-check-circle"></i> JSON</li>
+                      <li><i class="fas fa-check-circle"></i> BOOTSTRAP 4</li>
+                      <li><i class="fas fa-check-circle"></i> FONTAWESOME</li>
+                      <li>
+                        <i class="fas fa-check-circle"></i> SWEETALERT 2
+                      </li>
+                      <li><i class="fas fa-check-circle"></i> DATATABLES</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer">
+                  <button onclick="closeModal('modalSazon')">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="imagen-port" data-aos="zoom-out-down">
+            <img loading="lazy" src="img/portfolio/landing_descuento.png" alt="LANDING DESCUENTO"
+              onclick="openModal('modalDescuento')" />
+            <div class="hover-galeria" onclick="openModal('modalDescuento')">
+              <img loading="lazy" src="img/icon_view.png" alt="VIEW" onclick="openModal('modalDescuento')" />
+            </div>
+          </div>
+          <!-- MODAL -->
+          <div id="modalDescuento" class="modal">
+            <div class="modal-flex" id="modal-flex">
+              <div class="content-modal">
+                <div class="modal-header modal-flex">
+                  <h2>30% de descuento</h2>
+                  <span class="close" onclick="closeModal('modalDescuento')">&times;</span>
+                </div>
+                <div class="modal-body">
+                  <div class="img-project">
+                    <img loading="lazy" src="img/portfolio/landing_descuento.png" alt="" />
+                  </div>
+                  <div class="description">
+                    <p>
+                      Landing page 30% de descuento, para el registro con su
+                      certificado PIL
+                    </p>
+                    <br />
+                    <p>Tecnologías utilizadas en el desarrollo:</p>
+                    <ul>
+                      <li><i class="fas fa-check-circle"></i> HTML5</li>
+                      <li><i class="fas fa-check-circle"></i> JS</li>
+                      <li><i class="fas fa-check-circle"></i> CSS3</li>
+                      <li><i class="fas fa-check-circle"></i> JQUERY</li>
+                      <li><i class="fas fa-check-circle"></i> BOOTSTRAP 4</li>
+                      <li><i class="fas fa-check-circle"></i> PHP</li>
+                      <li><i class="fas fa-check-circle"></i> MYSQL</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer">
+                  <button onclick="closeModal('modalDescuento')">
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="imagen-port" data-aos="zoom-out-down">
+            <img loading="lazy" src="img/portfolio/landing_creando.jpg" alt="LANDING CREANDO"
+              onclick="openModal('modalCreando')" />
+            <div class="hover-galeria" onclick="openModal('modalCreando')">
+              <img loading="lazy" src="img/icon_view.png" alt="VIEW" onclick="openModal('modalCreando')" />
+            </div>
+          </div>
+          <!-- MODAL -->
+          <div id="modalCreando" class="modal">
+            <div class="modal-flex" id="modal-flex">
+              <div class="content-modal">
+                <div class="modal-header modal-flex">
+                  <h2>Convocatoria creando</h2>
+                  <span class="close" onclick="closeModal('modalCreando')">&times;</span>
+                </div>
+                <div class="modal-body">
+                  <div class="img-project">
+                    <img loading="lazy" src="img/portfolio/landing_creando.jpg" alt="" />
+                  </div>
+                  <div class="description">
+                    <p>
+                      Landing page convocatoria creando
+                    </p>
+                    <br />
+                    <p>Tecnologías utilizadas en el desarrollo:</p>
+                    <ul>
+                      <li><i class="fas fa-check-circle"></i> HTML5</li>
+                      <li><i class="fas fa-check-circle"></i> JS</li>
+                      <li><i class="fas fa-check-circle"></i> CSS3</li>
+                      <li><i class="fas fa-check-circle"></i> JQUERY</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer">
+                  <button onclick="closeModal('modalCreando')">
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER CONTACT -->
+  <footer id="contact">
+    <div class="container footer-contact">
+      <h1 class="main-title">
+        <span class="badge"> Contáctame </span>
+      </h1>
+      <div class="form-contact" data-aos="zoom-out-down">
+        <form>
+          <input required type="text" placeholder="Nombre" id="name" />
+          <input required type="email" placeholder="Email" id="email" />
+          <textarea required id="message" rows="5" placeholder="Su mensaje"></textarea>
+          <button type="button" id="btnSend">Enviar</button>
+        </form>
+      </div>
+      <div class="info-contact" data-aos="zoom-out-down">
+        <ul>
+          <li><i class="fab fa-whatsapp"></i> +52 982-120-7160</li>
+          <li><i class="fas fa-envelope"></i> jgrinformatic@gmail.com</li>
+        </ul>
+        <div class="icons-social">
+          <a href="skype:live:javiergranadosr?chat" target="_blank"><i class="fab fa-skype"></i></a>
+          <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
+          <a href="https://github.com/javiergranadosr" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <p>
+        &copy; 2020 Portafolio Javier Granados Rojas -
+        <span class="badge"> Desarrollador web </span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/smooth-scroll.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/send_message.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
