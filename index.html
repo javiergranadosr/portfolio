@@ -120,9 +120,9 @@
               <img loading="lazy" src="img/skills/adobexd.jpg" alt="ADOBE XD" />
             </div>
           </div>
-          <!-- <a href=""><i class="fab fa-linkedin-in"></i></a>
-          <a href=""><i class="fab fa-github"></i></a>
-          <a href=""><i class="fab fa-codepen"></i></a> -->
+
+          <a href="https://www.linkedin.com/in/javiergranadosr" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/javiergranadosr" target="_blank"><i class="fab fa-github"></i></a>
         </div>
       </div>
     </section>
@@ -135,8 +135,16 @@
           De clic en la imagen para ver la descripción del proyecto
         </p>
 
+        <div class="menu">
+          <button class="btn-menu active-menu" data-filter="todos"> Todos</button>
+          <button class="btn-menu" data-filter="apps">Apps web</button>
+          <button class="btn-menu" data-filter="webs">Sitios web</button>
+        </div>
+
+
         <div class="portfolio-gallery" id="portfolio-gallery">
-          <div class="imagen-port">
+
+          <div class="imagen-port box-img webs">
             <img loading="lazy" src="img/portfolio/portfolio.png" alt="PORTAFOLIO"
               onclick="openModal('modalPortfolio')" />
             <div class="hover-galeria" onclick="openModal('modalPortfolio')">
@@ -179,7 +187,7 @@
               </div>
             </div>
           </div>
-          <div class="imagen-port">
+          <div class="imagen-port box-img apps">
             <img loading="lazy" src="img/portfolio/secc.png" alt="SEEC" onclick="openModal('modalSeec')" />
             <div class="hover-galeria" onclick="openModal('modalSeec')">
               <img loading="lazy" src="img/icon_view.png" alt="VIEW" onclick="openModal('modalSeec')" />
@@ -232,7 +240,7 @@
             </div>
           </div>
 
-          <div class="imagen-port">
+          <div class="imagen-port box-img apps">
             <img loading="lazy" src="img/portfolio/budget_control.jpg" alt="BUDGET CONTROL"
               onclick="openModal('modalBudget')" />
             <div class="hover-galeria" onclick="openModal('modalBudget')">
@@ -286,7 +294,7 @@
             </div>
           </div>
 
-          <div class="imagen-port">
+          <div class="imagen-port box-img apps">
             <img loading="lazy" src="img/portfolio/system_lab.jpg" alt="SYSTEM LAB"
               onclick="openModal('modalSystemLab')" />
             <div class="hover-galeria" onclick="openModal('modalSystemLab')">
@@ -346,7 +354,7 @@
             </div>
           </div>
 
-          <div class="imagen-port">
+          <div class="imagen-port box-img apps">
             <img loading="lazy" src="img/portfolio/sistema_arangar.png" alt="PREDIAGNOSTICO ARANGAR"
               onclick="openModal('modalArangar')" />
             <div class="hover-galeria" onclick="openModal('modalArangar')">
@@ -400,7 +408,7 @@
               </div>
             </div>
           </div>
-          <div class="imagen-port">
+          <div class="imagen-port box-img apps">
             <img loading="lazy" src="img/portfolio/sazon_campeche.png" alt="SAZON CAMPECHE"
               onclick="openModal('modalSazon')" />
             <div class="hover-galeria" onclick="openModal('modalSazon')">
@@ -451,7 +459,7 @@
             </div>
           </div>
 
-          <div class="imagen-port">
+          <div class="imagen-port box-img webs">
             <img loading="lazy" src="img/portfolio/landing_descuento.png" alt="LANDING DESCUENTO"
               onclick="openModal('modalDescuento')" />
             <div class="hover-galeria" onclick="openModal('modalDescuento')">
@@ -497,7 +505,7 @@
             </div>
           </div>
 
-          <div class="imagen-port">
+          <div class="imagen-port box-img webs">
             <img loading="lazy" src="img/portfolio/landing_creando.jpg" alt="LANDING CREANDO"
               onclick="openModal('modalCreando')" />
             <div class="hover-galeria" onclick="openModal('modalCreando')">
@@ -579,6 +587,7 @@
   <script src="js/smooth-scroll.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/send_message.js"></script>
+  <script src="js/filter.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();

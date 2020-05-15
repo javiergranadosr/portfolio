@@ -440,7 +440,9 @@
 }
 
 /* PORTFOLIO */
-
+.box-img{
+  overflow: hidden;
+}
 .portfolio h1 {
   width: 100%;
   margin-top: 2em;
@@ -457,6 +459,28 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+.menu{
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+.menu button{
+  background-color: var(--color4);
+  border: 1px solid var(--color3);
+  padding: 8px;
+  cursor: pointer;
+  margin: .2em;
+  transition: all 300ms ease;
+}
+
+.menu button:hover{
+  background-color: var(--color3);
+  color: var(--color4);
+}
+button.active-menu{
+  background-color: var(--color3);
+  color: var(--color4);
 }
 
 .imagen-port {
