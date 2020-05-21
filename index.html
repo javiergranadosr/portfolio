@@ -50,7 +50,7 @@
   <div class="content-banner">
     <div class="title-banner" data-aos="zoom-out-down">
       <h1>
-        ¡Hola! Soy un <br />Desarrollador <span class="badge">Web</span>
+        ¡Hola! Soy un <br />Desarrollador Web <span class="badge">Full Stack</span>
       </h1>
       <a data-scroll href="#portfolio" class="animated zoomIn">Portafolio</a>
     </div>
@@ -139,6 +139,7 @@
           <button class="btn-menu active-menu" data-filter="todos"> Todos</button>
           <button class="btn-menu" data-filter="apps">Apps web</button>
           <button class="btn-menu" data-filter="webs">Sitios web</button>
+          <button class="btn-menu" data-filter="recursos">Recursos</button>
         </div>
 
 
@@ -177,6 +178,10 @@
                       <li><i class="fas fa-check-circle"></i> FONTAWESOME</li>
                       <li><i class="fas fa-check-circle"></i> AOS</li>
                     </ul>
+                    <br />
+                    <p>Visitar sitio web <a href="https://javiergranadosr.github.io/portfolio/" target="_blank">link del
+                        sitio web</a>
+                    </p>
                   </div>
                 </div>
                 <div class="footer">
@@ -546,6 +551,64 @@
               </div>
             </div>
           </div>
+
+          <div class="imagen-port box-img recursos">
+            <img loading="lazy" src="img/portfolio/api-php7.png" alt="API PHP 7 NATIVO"
+              onclick="openModal('modalAPI')" />
+            <div class="hover-galeria" onclick="openModal('modalAPI')">
+              <img loading="lazy" src="img/icon_view.png" alt="VIEW" onclick="openModal('modalAPI')" />
+            </div>
+          </div>
+          <!-- MODAL -->
+          <div id="modalAPI" class="modal">
+            <div class="modal-flex" id="modal-flex">
+              <div class="content-modal">
+                <div class="modal-header modal-flex">
+                  <h2>Api Restful y SPA vuejs</h2>
+                  <span class="close" onclick="closeModal('modalAPI')">&times;</span>
+                </div>
+                <div class="modal-body">
+                  <div class="img-project">
+                    <img loading="lazy" src="img/portfolio/api-php7.png" alt="" />
+                  </div>
+                  <div class="description">
+                    <p>
+                      API Restful desarrollada con php7 con autorización de tipo Auth y spa vuejs con la documentación
+                      correspondiente de la api.
+                    </p>
+                    <br />
+                    <p>Tecnologías utilizadas en el desarrollo:</p>
+                    <ul>
+                      <li><i class="fas fa-check-circle"></i> PHP 7</li>
+                      <li><i class="fas fa-check-circle"></i> MYSQL </li>
+                      <li><i class="fas fa-check-circle"></i> CLI VUEJS </li>
+                      <li><i class="fas fa-check-circle"></i> VUE ROUTER</li>
+                      <li><i class="fas fa-check-circle"></i> CORE JS</li>
+                      <li><i class="fas fa-check-circle"></i> EXPRESS</li>
+                      <li><i class="fas fa-check-circle"></i> BOOTSTRAP VUE</li>
+                      <li><i class="fas fa-check-circle"></i> HTML5</li>
+                      <li><i class="fas fa-check-circle"></i> JS</li>
+                      <li><i class="fas fa-check-circle"></i> CSS3</li>
+
+                    </ul>
+                    <br />
+                    <p>Ver documentación del uso del api en postman <a
+                        href="https://documentation-api-store.herokuapp.com" target="_blank">link del
+                        sitio </a>
+                    </p>
+                    <p>Descargar API <a href="https://github.com/javiergranadosr/api-store-php" target="_blank">link de
+                        descarga en Github</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="footer">
+                  <button onclick="closeModal('modalAPI')">
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -571,7 +634,7 @@
           <li><i class="fas fa-envelope"></i> jgrinformatic@gmail.com</li>
         </ul>
         <div class="icons-social">
-          <a href="skype:live:javiergranadosr?chat" target="_blank"><i class="fab fa-skype"></i></a>
+
           <a href="https://www.linkedin.com/in/javiergranadosr" target="_blank"><i class="fab fa-linkedin-in"></i></a>
           <a href="https://github.com/javiergranadosr" target="_blank"><i class="fab fa-github"></i></a>
         </div>
