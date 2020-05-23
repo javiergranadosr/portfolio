@@ -144,48 +144,49 @@
 
 
         <div class="portfolio-gallery" id="portfolio-gallery">
-
-          <div class="imagen-port box-img webs">
-            <img loading="lazy" src="img/portfolio/portfolio.png" alt="PORTAFOLIO"
-              onclick="openModal('modalPortfolio')" />
-            <div class="hover-galeria" onclick="openModal('modalPortfolio')">
-              <img onclick="openModal('modalPortfolio')" loading="lazy" src="img/icon_view.png" alt="VIEW" />
+          <div class="imagen-port box-img recursos">
+            <img loading="lazy" src="img/portfolio/app-products.png" alt="APPS PRODUCTS"
+              onclick="openModal('modalProductApp')" />
+            <div class="hover-galeria" onclick="openModal('modalProductApp')">
+              <img loading="lazy" src="img/icon_view.png" alt="VIEW" onclick="openModal('modalProductApp')" />
             </div>
           </div>
           <!-- MODAL -->
-          <div id="modalPortfolio" class="modal">
+          <div id="modalProductApp" class="modal">
             <div class="modal-flex" id="modal-flex">
               <div class="content-modal">
                 <div class="modal-header modal-flex">
-                  <h2>Landing page</h2>
-                  <span class="close" onclick="closeModal('modalPortfolio')">&times;</span>
+                  <h2>APP PRODUCTS</h2>
+                  <span class="close" onclick="closeModal('modalProductApp')">&times;</span>
                 </div>
                 <div class="modal-body">
                   <div class="img-project">
-                    <img loading="lazy" src="img/portfolio/portfolio.png" alt="" />
+                    <img loading="lazy" src="img/portfolio/app-products.png" alt="" />
                   </div>
                   <div class="description">
                     <p>
-                      Portafolio Javier Granados Rojas
+                      Aplicación de productos desarrollada con Laravel en su versión 6 y vuejs.
                     </p>
                     <br />
                     <p>Tecnologías utilizadas en el desarrollo:</p>
                     <ul>
-                      <li><i class="fas fa-check-circle"></i> HTML5</li>
-                      <li><i class="fas fa-check-circle"></i> JS</li>
-                      <li><i class="fas fa-check-circle"></i> CSS3</li>
-                      <li><i class="fas fa-check-circle"></i> JQUERY</li>
-                      <li><i class="fas fa-check-circle"></i> FONTAWESOME</li>
-                      <li><i class="fas fa-check-circle"></i> AOS</li>
+                      <li><i class="fas fa-check-circle"></i> LARAVEL 6</li>
+                      <li><i class="fas fa-check-circle"></i> MYSQL</li>
+                      <li><i class="fas fa-check-circle"></i> VUEJS </li>
+                      <li><i class="fas fa-check-circle"></i> AXIOS</li>
+                      <li><i class="fas fa-check-circle"></i> BOOTSTRAP 4</li>
                     </ul>
                     <br />
-                    <p>Visitar sitio web <a href="https://javiergranadosr.github.io/portfolio/" target="_blank">link del
-                        sitio web</a>
+                    <p>Ver demo <a href="https://app-products-laravel-vuejs.herokuapp.com/" target="_blank">demo
+                        app </a>
+                    </p>
+                    <p>Descargar proyecto <a href="https://github.com/javiergranadosr/app-products"
+                        target="_blank">Descargar</a>
                     </p>
                   </div>
                 </div>
                 <div class="footer">
-                  <button onclick="closeModal('modalPortfolio')">
+                  <button onclick="closeModal('modalProductApp')">
                     Cerrar
                   </button>
                 </div>
@@ -236,13 +237,60 @@
                         href="https://documentation-api-store.herokuapp.com" target="_blank">link del
                         sitio </a>
                     </p>
-                    <p>Descargar API <a href="https://github.com/javiergranadosr/api-store-php" target="_blank">link de
-                        descarga en Github</a>
+                    <p>Descargar API <a href="https://github.com/javiergranadosr/api-store-php"
+                        target="_blank">Descargar</a>
                     </p>
                   </div>
                 </div>
                 <div class="footer">
                   <button onclick="closeModal('modalAPI')">
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="imagen-port box-img webs">
+            <img loading="lazy" src="img/portfolio/portfolio.png" alt="PORTAFOLIO"
+              onclick="openModal('modalPortfolio')" />
+            <div class="hover-galeria" onclick="openModal('modalPortfolio')">
+              <img onclick="openModal('modalPortfolio')" loading="lazy" src="img/icon_view.png" alt="VIEW" />
+            </div>
+          </div>
+          <!-- MODAL -->
+          <div id="modalPortfolio" class="modal">
+            <div class="modal-flex" id="modal-flex">
+              <div class="content-modal">
+                <div class="modal-header modal-flex">
+                  <h2>Landing page</h2>
+                  <span class="close" onclick="closeModal('modalPortfolio')">&times;</span>
+                </div>
+                <div class="modal-body">
+                  <div class="img-project">
+                    <img loading="lazy" src="img/portfolio/portfolio.png" alt="" />
+                  </div>
+                  <div class="description">
+                    <p>
+                      Portafolio Javier Granados Rojas
+                    </p>
+                    <br />
+                    <p>Tecnologías utilizadas en el desarrollo:</p>
+                    <ul>
+                      <li><i class="fas fa-check-circle"></i> HTML5</li>
+                      <li><i class="fas fa-check-circle"></i> JS</li>
+                      <li><i class="fas fa-check-circle"></i> CSS3</li>
+                      <li><i class="fas fa-check-circle"></i> JQUERY</li>
+                      <li><i class="fas fa-check-circle"></i> FONTAWESOME</li>
+                      <li><i class="fas fa-check-circle"></i> AOS</li>
+                    </ul>
+                    <br />
+                    <p>Visitar sitio web <a href="https://javiergranadosr.github.io/portfolio/" target="_blank">Ir al
+                        sitio web</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="footer">
+                  <button onclick="closeModal('modalPortfolio')">
                     Cerrar
                   </button>
                 </div>
