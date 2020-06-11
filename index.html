@@ -136,14 +136,57 @@
         </p>
 
         <div class="menu">
-          <button class="btn-menu active-menu" data-filter="todos"> Todos</button>
-          <button class="btn-menu" data-filter="apps">Apps web</button>
+          <button class="btn-menu" data-filter="todos">Todos</button>
+          <button class="btn-menu" data-filter="apps">Desarrollo web</button>
           <button class="btn-menu" data-filter="webs">Sitios web</button>
-          <button class="btn-menu" data-filter="recursos">Recursos</button>
+          <button class="btn-menu" data-filter="recursos">Recursos web</button>
         </div>
 
 
         <div class="portfolio-gallery" id="portfolio-gallery">
+          <div class="imagen-port box-img recursos">
+            <img loading="lazy" src="img/portfolio/login-html5.png" alt="MAQUETA HTML5"
+              onclick="openModal('modalMaqueta')" />
+            <div class="hover-galeria" onclick="openModal('modalMaqueta')">
+              <img loading="lazy" src="img/icon_view.png" alt="VIEW" onclick="openModal('modalMaqueta')" />
+            </div>
+          </div>
+          <!-- MODAL -->
+          <div id="modalMaqueta" class="modal">
+            <div class="modal-flex" id="modal-flex">
+              <div class="content-modal">
+                <div class="modal-header modal-flex">
+                  <h2>Maqueta login HTML5 CSS3</h2>
+                  <span class="close" onclick="closeModal('modalMaqueta')">&times;</span>
+                </div>
+                <div class="modal-body">
+                  <div class="img-project">
+                    <img loading="lazy" src="img/portfolio/login-html5.png" alt="" />
+                  </div>
+                  <div class="description">
+                    <p>
+                      Maqueta login HTML5 CSS3
+                    </p>
+                    <br />
+                    <p>Tecnologías utilizadas en el desarrollo:</p>
+                    <ul>
+                      <li><i class="fas fa-check-circle"></i> HTML5</li>
+                      <li><i class="fas fa-check-circle"></i> CSS3</li>
+                      <li><i class="fas fa-check-circle"></i> FOTNAWESOME </li>
+                    </ul>
+                    <br />
+                    <p>Ver demo <a href="https://javiergranadosr.github.io/login-html5-css3/" target="_blank">Demo</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="footer">
+                  <button onclick="closeModal('modalMaqueta')">
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="imagen-port box-img recursos">
             <img loading="lazy" src="img/portfolio/app-products.png" alt="APPS PRODUCTS"
               onclick="openModal('modalProductApp')" />
@@ -314,11 +357,9 @@
                   </div>
                   <div class="description">
                     <p>
-                      Caso éxito. Sistema de Evaluación del Estado de Campeche,
-                      implementado a nivel estatal en el estado de
-                      campeche, para ser aplicados autoevaluaciones y
-                      evaluaciones finales en línea a nivel primaria y
-                      secundaria.
+                      <strong>Sistema de Evaluación del Estado de Campeche</strong>
+                      Plataforma web implementada a nivel estatal para aplicar autoevaluaciones y evaluaciones finales a
+                      nivel primaria y secundaria.
                     </p>
                     <br />
                     <p>Tecnologías utilizadas en el desarrollo:</p>
@@ -368,8 +409,8 @@
                   </div>
                   <div class="description">
                     <p>
-                      Sistema para el registro de obras públicas y consulta de
-                      reportes generales, por contratista y por supervisor.
+                      Sistema para el control de obras públicas y reportes a nivel general, por contratista y supervisor
+                      de la obra.
                     </p>
                     <br />
                     <p>Tecnologías utilizadas en el desarrollo:</p>
@@ -422,11 +463,8 @@
                   </div>
                   <div class="description">
                     <p>
-                      Sistema implementado en un laboratorio de prácticas
-                      profesionales, para el registro al ingresar al
-                      laboratorio y practica a realizar, registro de uso de
-                      equipos, mantenimiento de equipos del laboratorio y
-                      reportes por rango de fecha, diarios, semanal y mensual.
+                      Sistema para tener un control de ingresos al laboratorio, prácticas realizadas, inventario de
+                      equipos y reportes por rango de fechas.
                     </p>
                     <br />
                     <p>Tecnologías utilizadas en el desarrollo:</p>
@@ -482,10 +520,8 @@
                   </div>
                   <div class="description">
                     <p>
-                      Sistema implementado en la empresa Arangar, para el
-                      prediagnóstico de equipos de cómputo, control de
-                      trabajadores con sus respectivos roles de usuario y
-                      registro de servicios.
+                      Sistema para llevar el control de ingresos de equipo de cómputo, control de trabajadores con sus
+                      respectivos roles de usuario, registro de servicios y reportes.
                     </p>
                     <br />
                     <p>Tecnologías utilizadas en el desarrollo:</p>
@@ -527,7 +563,7 @@
             <div class="modal-flex" id="modal-flex">
               <div class="content-modal">
                 <div class="modal-header modal-flex">
-                  <h2>Prediagnóstico Arangar</h2>
+                  <h2>Sazón campeche </h2>
                   <span class="close" onclick="closeModal('modalSazon')">&times;</span>
                 </div>
                 <div class="modal-body">
