@@ -178,6 +178,10 @@
 }
 
 /* HEADER */
+.fa-terminal{
+  color: var(--color3);
+  margin-right: 6px;
+}
 .header {
   position: fixed;
   top: 0;

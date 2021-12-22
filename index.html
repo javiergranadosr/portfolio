@@ -26,13 +26,13 @@
   <header class="header" id="hello">
     <div class="content-nav container">
       <div class="logo">
-        <h1>Javier <span class="badge"> Granados</span></h1>
+        <i class="fas fa-terminal"></i> <h1>javiergranados<span class="badge">r</span></h1>
       </div>
       <div class="menu-nav logo" id="show-menu">
         <nav>
           <ul>
             <li><a data-scroll href="#hello">Hola</a></li>
-            <li><a data-scroll href="#about-me"> Sobre mi </a></li>
+            <li><a data-scroll href="#about-me"> ¿Quién soy?</a></li>
             <li><a data-scroll href="#portfolio"> Portafolio </a></li>
             <li><a data-scroll href="#contact">Contacto</a></li>
           </ul>
@@ -50,7 +50,7 @@
   <div class="content-banner">
     <div class="title-banner" data-aos="zoom-out-down">
       <h1>
-        ¡Hola! Soy un <br />Desarrollador<span class="badge">Web</span>
+        Hola, soy un <br />desarrollador web <span class="badge">fullstack</span>
       </h1>
       <a data-scroll href="#portfolio" class="animated zoomIn">Portafolio</a>
     </div>
@@ -60,7 +60,7 @@
     <!-- SECTION ABOUT ME -->
     <section class="container" id="about-me">
       <div class="about-me">
-        <h1 class="main-title">Sobre <span class="badge"> mi </span></h1>
+        <h1 class="main-title">¿Quién<span class="badge">soy</span>?</h1>
         <div class="about-me-img">
           <img loading="lazy" src="img/about_me.jpg" alt="" />
         </div>
@@ -68,54 +68,26 @@
           <p>
             Me considero una persona autodidacta, amante y apasionada en el mundo del desarrollo de software, me especializo en el desarrollo web, siempre estoy en constante aprendizaje a nuevas tecnologías para mi perfil profesional. 
           </p>
-          <p>Skills:</p>
-          <div class="about-me-skills">
-            <div class="img-skill">
-              <img loading="lazy" src="img/skills/php.png" alt="PHP" />
-            </div>
-            <div class="img-skill">
-              <img loading="lazy" src="img/skills/mysql.png" alt="MYSQL" />
-            </div>
+          <p>Frontend:</p>
+            <span class ='badge'>HTML5</span>         
+            <span class ='badge'>CSS3</span>  
+            <span class ='badge'>JAVASCRIPT</span> 
+            <span class ='badge'>TYPESCRIPT</span>  
+            <span class ='badge'>ANGULAR</span> 
+            <span class ='badge'>BOOTSTRAP</span>   
+            <span class ='badge'>PRIMENG</span>   
 
-            <div class="img-skill">
-              <img loading="lazy" src="img/skills/js.png" alt="JAVASCRITP" />
-            </div>
-            <div class="img-skill">
-              <img loading="lazy" src="img/skills/react.png" alt="REACT JS" />
-            </div>
-            <div class="img-skill animated zoomIn">
-              <img loading="lazy" src="img/skills/html5.png" alt="HTML5" />
-            </div>
-            <div class="img-skill">
-              <img loading="lazy" src="img/skills/css3.png" alt="CSS3" />
-            </div>
-            <div class="img-skill">
-              <img loading="lazy" src="img/skills/bootstrap.png" alt="BOOTSTRAP 4" />
-            </div>
-            <div class="img-skill">
-              <img loading="lazy" src="img/skills/materialize.png" alt="MATERIALIZE " />
-            </div>
-            
-            <div class="img-skill">
-              <img loading="lazy" src="img/skills/laravel.jpg" alt="LARAVEL" />
-            </div>
+            <p>Backend:</p>
+            <span class ='badge'>PHP</span>     
+            <span class ='badge' >LARAVEL</span>    
+            <span class ='badge'>MYSQL</span>  
+            <p>Otros:</p>
+            <span class ='badge'>GIT</span>         
+            <span class ='badge'>JSON</span>  
+            <span class ='badge'>AJAX</span>  
+            <span class ='badge'>JQUERY</span>  
 
-            <div class="img-skill">
-              <img loading="lazy" src="img/skills/jquery.png" alt="JQUERY" />
-            </div>
-            <div class="img-skill">
-              <img loading="lazy" src="img/skills/sass.png" alt="SASS" />
-            </div>
-            <div class="img-skill">
-              <img loading="lazy" src="img/skills/git.png" alt="GIT" />
-            </div>
-            <div class="img-skill">
-              <img loading="lazy" src="img/skills/markdown.jpg" alt="MARKDOWN" />
-            </div>
-      
-          </div>
-
-
+           
         </div>
       </div>
     </section>
@@ -130,14 +102,13 @@
 
         <div class="menu">
           <button class="btn-menu" data-filter="todos">Todos</button>
-          <button class="btn-menu" data-filter="apps">Desarrollo web</button>
-          <button class="btn-menu" data-filter="webs">Sitios web</button>
-          <button class="btn-menu" data-filter="recursos">Recursos web</button>
+          <button class="btn-menu" data-filter="back">Backend</button>
+          <button class="btn-menu" data-filter="front">Frontend</button>
         </div>
 
 
         <div class="portfolio-gallery" id="portfolio-gallery">
-          <div class="imagen-port box-img recursos">
+          <div class="imagen-port box-img front">
             <img loading="lazy" src="img/portfolio/login-html5.png" alt="MAQUETA HTML5"
               onclick="openModal('modalMaqueta')" />
             <div class="hover-galeria" onclick="openModal('modalMaqueta')">
@@ -180,110 +151,8 @@
               </div>
             </div>
           </div>
-          <div class="imagen-port box-img recursos">
-            <img loading="lazy" src="img/portfolio/app-products.png" alt="APPS PRODUCTS"
-              onclick="openModal('modalProductApp')" />
-            <div class="hover-galeria" onclick="openModal('modalProductApp')">
-              <img loading="lazy" src="img/icon_view.png" alt="VIEW" onclick="openModal('modalProductApp')" />
-            </div>
-          </div>
-          <!-- MODAL -->
-          <div id="modalProductApp" class="modal">
-            <div class="modal-flex" id="modal-flex">
-              <div class="content-modal">
-                <div class="modal-header modal-flex">
-                  <h2>APP PRODUCTS</h2>
-                  <span class="close" onclick="closeModal('modalProductApp')">&times;</span>
-                </div>
-                <div class="modal-body">
-                  <div class="img-project">
-                    <img loading="lazy" src="img/portfolio/app-products.png" alt="" />
-                  </div>
-                  <div class="description">
-                    <p>
-                      Aplicación de productos desarrollada con Laravel en su versión 6 y vuejs.
-                    </p>
-                    <br />
-                    <p>Tecnologías utilizadas en el desarrollo:</p>
-                    <ul>
-                      <li><i class="fas fa-check-circle"></i> LARAVEL 6</li>
-                      <li><i class="fas fa-check-circle"></i> MYSQL</li>
-                      <li><i class="fas fa-check-circle"></i> VUEJS </li>
-                      <li><i class="fas fa-check-circle"></i> AXIOS</li>
-                      <li><i class="fas fa-check-circle"></i> BOOTSTRAP 4</li>
-                    </ul>
-                    <br />
-                    <p>Descargar proyecto <a href="https://github.com/javiergranadosr/app-products"
-                        target="_blank">Descargar</a>
-                    </p>
-                  </div>
-                </div>
-                <div class="footer">
-                  <button onclick="closeModal('modalProductApp')">
-                    Cerrar
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="imagen-port box-img recursos">
-            <img loading="lazy" src="img/portfolio/api-php.png" alt="API PHP 7 NATIVO"
-              onclick="openModal('modalAPI')" />
-            <div class="hover-galeria" onclick="openModal('modalAPI')">
-              <img loading="lazy" src="img/icon_view.png" alt="VIEW" onclick="openModal('modalAPI')" />
-            </div>
-          </div>
-          <!-- MODAL -->
-          <div id="modalAPI" class="modal">
-            <div class="modal-flex" id="modal-flex">
-              <div class="content-modal">
-                <div class="modal-header modal-flex">
-                  <h2>Api Restful y SPA vuejs</h2>
-                  <span class="close" onclick="closeModal('modalAPI')">&times;</span>
-                </div>
-                <div class="modal-body">
-                  <div class="img-project">
-                    <img loading="lazy" src="img/portfolio/api-php.png" alt="" />
-                  </div>
-                  <div class="description">
-                    <p>
-                      API Restful desarrollada con php7 con autorización de tipo Auth y spa vuejs con la documentación
-                      correspondiente de la api.
-                    </p>
-                    <br />
-                    <p>Tecnologías utilizadas en el desarrollo:</p>
-                    <ul>
-                      <li><i class="fas fa-check-circle"></i> PHP 7</li>
-                      <li><i class="fas fa-check-circle"></i> MYSQL </li>
-                      <li><i class="fas fa-check-circle"></i> CLI VUEJS </li>
-                      <li><i class="fas fa-check-circle"></i> VUE ROUTER</li>
-                      <li><i class="fas fa-check-circle"></i> CORE JS</li>
-                      <li><i class="fas fa-check-circle"></i> EXPRESS</li>
-                      <li><i class="fas fa-check-circle"></i> BOOTSTRAP VUE</li>
-                      <li><i class="fas fa-check-circle"></i> HTML5</li>
-                      <li><i class="fas fa-check-circle"></i> JS</li>
-                      <li><i class="fas fa-check-circle"></i> CSS3</li>
-
-                    </ul>
-                    <br />
-                    <p>Ver documentación del uso del api en postman <a
-                        href="https://documentation-api-store.herokuapp.com" target="_blank">link del
-                        sitio </a>
-                    </p>
-                    <p>Descargar API <a href="https://github.com/javiergranadosr/api-store-php"
-                        target="_blank">Descargar</a>
-                    </p>
-                  </div>
-                </div>
-                <div class="footer">
-                  <button onclick="closeModal('modalAPI')">
-                    Cerrar
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="imagen-port box-img webs">
+       
+          <div class="imagen-port box-img front">
             <img loading="lazy" src="img/portfolio/portfolio.png" alt="PORTAFOLIO"
               onclick="openModal('modalPortfolio')" />
             <div class="hover-galeria" onclick="openModal('modalPortfolio')">
@@ -330,7 +199,7 @@
               </div>
             </div>
           </div>
-          <div class="imagen-port box-img apps">
+          <div class="imagen-port box-img back">
             <img loading="lazy" src="img/portfolio/secc.png" alt="SEEC" onclick="openModal('modalSeec')" />
             <div class="hover-galeria" onclick="openModal('modalSeec')">
               <img loading="lazy" src="img/icon_view.png" alt="VIEW" onclick="openModal('modalSeec')" />
@@ -381,7 +250,7 @@
             </div>
           </div>
 
-          <div class="imagen-port box-img apps">
+          <div class="imagen-port box-img back">
             <img loading="lazy" src="img/portfolio/budget_control.jpg" alt="BUDGET CONTROL"
               onclick="openModal('modalBudget')" />
             <div class="hover-galeria" onclick="openModal('modalBudget')">
@@ -435,7 +304,7 @@
             </div>
           </div>
 
-          <div class="imagen-port box-img apps">
+          <div class="imagen-port box-img back">
             <img loading="lazy" src="img/portfolio/system_lab.jpg" alt="SYSTEM LAB"
               onclick="openModal('modalSystemLab')" />
             <div class="hover-galeria" onclick="openModal('modalSystemLab')">
@@ -492,7 +361,7 @@
             </div>
           </div>
 
-          <div class="imagen-port box-img apps">
+          <div class="imagen-port box-img back">
             <img loading="lazy" src="img/portfolio/sistema_arangar.png" alt="PREDIAGNOSTICO ARANGAR"
               onclick="openModal('modalArangar')" />
             <div class="hover-galeria" onclick="openModal('modalArangar')">
@@ -544,7 +413,7 @@
               </div>
             </div>
           </div>
-          <div class="imagen-port box-img apps">
+          <div class="imagen-port box-img back">
             <img loading="lazy" src="img/portfolio/sazon_campeche.png" alt="SAZON CAMPECHE"
               onclick="openModal('modalSazon')" />
             <div class="hover-galeria" onclick="openModal('modalSazon')">
@@ -595,7 +464,7 @@
             </div>
           </div>
 
-          <div class="imagen-port box-img webs">
+          <div class="imagen-port box-img front">
             <img loading="lazy" src="img/portfolio/landing_descuento.png" alt="LANDING DESCUENTO"
               onclick="openModal('modalDescuento')" />
             <div class="hover-galeria" onclick="openModal('modalDescuento')">
@@ -641,7 +510,7 @@
             </div>
           </div>
 
-          <div class="imagen-port box-img webs">
+          <div class="imagen-port box-img front">
             <img loading="lazy" src="img/portfolio/landing_creando.jpg" alt="LANDING CREANDO"
               onclick="openModal('modalCreando')" />
             <div class="hover-galeria" onclick="openModal('modalCreando')">
@@ -704,7 +573,6 @@
       </div>
       <div class="info-contact">
         <ul>
-          <li><i class="fab fa-whatsapp"></i> +52 982-120-7160</li>
           <li><i class="fas fa-envelope"></i> jgrinformatic@gmail.com</li>
         </ul>
         <div class="icons-social">
